@@ -33,7 +33,7 @@ Drag and drop the unzipped folder into the extensions page
 
 - Add Supreme
 
-- Integrate Discord API
+- Integrate Discord webhooks
 
 - Add support for more websites
 
