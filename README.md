@@ -37,3 +37,9 @@ Drag and drop the unzipped folder into the extensions page
 
 - Add support for more websites
 
+## FAQ
+
+#### What is ATC and ACO
+
+ATC: Completes the checkout process until submit order
+ACO: Submits Order
