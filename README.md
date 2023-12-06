@@ -1,11 +1,15 @@
 
-![Logo](https://i.imgur.com/l9OjMfn.png)
+<img src="https://i.imgur.com/ZaQq9tm.png">
 
-
-# Cosmic Autofill
-
+<p align="center">
 Open source autofill extension for Shopify
+</p>
 
+## Features
+
+- Fast Shopify Autofill
+- Lightweight
+- Cross-platform
 
 ## Installation
 
@@ -17,11 +21,6 @@ Enable Developer mode
 Drag and drop the unzipped folder into the extensions page
 ```
     
-## Features
-
-- Fast Shopify Autofill
-- Lightweight
-- Cross platform
 
 
 ## Screenshots
