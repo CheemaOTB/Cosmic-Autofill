@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "Cosmic Autofill",
+    "version": "1.0.0",
+    "description": "Helping Secure Limited Items!",
+    "icons": { "16": "assets/img/CosmicAutofillLogo.png",
+           "48": "assets/img/CosmicAutofillLogo.png",
+          "128": "assets/img/CosmicAutofillLogo.png" },
+    "permissions": [
+	  "declarativeContent",
+    "storage",
+    "proxy",
+    "tabs",
+    "webRequest",
+    "contentSettings",
+    "webNavigation",
+    "activeTab",
+    "cookies",
+    "notifications",
+    "browsingData",
+    "identity",
+    "alarms",
+    "gcm",
+    "debugger",
+    "webRequestAuthProvider"
+  ],
+    "action": {},
+    "background": {
+        "service_worker": "inject/background.js"
+    },
+    "content_scripts": [
+		{
+			"matches": [
+				"https://www.supremenewyork.com/checkout"
+			],
+			"js": [
+				"inject/supreme.js"
+			]
+		},
+		{
+			"matches": [
+				"https://*/*/checkouts/*"
+			],
+			"js": [
+				"inject/shopify.js"
+			]
+		},
+		{
+			"matches": [
+				"https://*.shopifycs.com/*"
+			],
+			"js": [
+				"inject/shopify-card.js"
+			],
+			"all_frames": true
+		}
+	]
+  }
+  
